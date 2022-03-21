@@ -8,3 +8,6 @@ Loggen mit Debug.Log("")
 block Hitcount erhöhen im Ball script bei treffer
 farbe mit Material[] materials; in editor dann bearbeiten.
 	GetCOmponent<Renderer>().material = materials[i];
+blöcke zu prefabs machen (vorlagen)
+leeres Gameobject erzeugen für punktezähler usw...
+Instantiate erzeugt prefabs
