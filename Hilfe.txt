@@ -1,0 +1,10 @@
+Abzuschießende Blöcke taggen mit -> other.CompareTag("") dann erkennen
+Blockscript vergeben,
+objekt zerstören mit -> Destroy(other.gameObject);
+		Unsichtbar other.gameObject.GetComponent<(Mesh)Renderer>.enabled = false; 
+			Colider muss dann weg
+Zählen der Blocktreffer selbst händeln im Block script.
+Loggen mit Debug.Log("")
+block Hitcount erhöhen im Ball script bei treffer
+farbe mit Material[] materials; in editor dann bearbeiten.
+	GetCOmponent<Renderer>().material = materials[i];
