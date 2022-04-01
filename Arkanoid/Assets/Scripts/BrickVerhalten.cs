@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class BrickVerhalten : MonoBehaviour
 {
-    public Manager manager;
-        
+    private Manager manager = Manager.instanceOf;
     public Material[] materials;
     
+    [SerializeField]
+    int minLife;
+    
+    [SerializeField]
+    int maxLife;  
         
-    int hitCount;
-    int startCount;
-    int troll;
+    private int hitCount;
+    private int startCount;
+    private int troll;
     
     // Start is called before the first frame update
     void Start()
     {
         System.Random random = new System.Random();
-        hitCount = random.Next(1,3);
+        hitCount = random.Next(minLife,maxLife);
         startCount = hitCount;
-        GetComponent<Renderer>().material = materials[hitCount - 1];
+        this.GetComponent<Renderer>().material = materials[hitCount - 1];
     }
 
     // Update is called once per frame
@@ -30,13 +34,12 @@ public class BrickVerhalten : MonoBehaviour
             hitCount--;
             manager.score += startCount * 20;
             Debug.Log(manager.score);
-            GetComponent<Renderer>().enabled = false;
-            GetComponent<BoxCollider>().enabled = false;
-
+            this.GetComponent<Renderer>().forceRenderingOff = true;
+            this.GetComponent<BoxCollider>().isTrigger = false;
         }  
         if (hitCount > 0)
         {
-            GetComponent<Renderer>().material = materials[hitCount - 1];
+            this.GetComponent<Renderer>().material = materials[hitCount - 1];
         }  
 
         if (troll >= 60)
