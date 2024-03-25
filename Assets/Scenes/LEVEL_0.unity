@@ -5094,13 +5094,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243125087}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.9, y: 0, z: -0.5}
-  m_LocalScale: {x: 10, y: 0.20000002, z: 0.2}
+  m_LocalScale: {x: 0.2, y: 10, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 996227738}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1243125092
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6979,13 +6979,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590458887}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.9, y: 0, z: -0.5}
-  m_LocalScale: {x: 10, y: 0.20000002, z: 0.2}
+  m_LocalScale: {x: 0.2, y: 10, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 996227738}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1590458892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9220,7 +9220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3127394207878491989, guid: ede638f433271c9499792762e2aaec9e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3127394207878491989, guid: ede638f433271c9499792762e2aaec9e, type: 3}
       propertyPath: m_LocalScale.y
@@ -9270,9 +9270,25 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4346273336595708869, guid: ede638f433271c9499792762e2aaec9e, type: 3}
+      propertyPath: border
+      value: 
+      objectReference: {fileID: 1243125087}
+    - target: {fileID: 4346273336595708869, guid: ede638f433271c9499792762e2aaec9e, type: 3}
+      propertyPath: leftBorder
+      value: 
+      objectReference: {fileID: 1590458887}
+    - target: {fileID: 4346273336595708869, guid: ede638f433271c9499792762e2aaec9e, type: 3}
+      propertyPath: rightBorder
+      value: 
+      objectReference: {fileID: 1243125087}
     - target: {fileID: 6879188604059439053, guid: ede638f433271c9499792762e2aaec9e, type: 3}
       propertyPath: m_Name
       value: GamePaddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426680636108970368, guid: ede638f433271c9499792762e2aaec9e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7935390978183436743, guid: ede638f433271c9499792762e2aaec9e, type: 3}
       propertyPath: m_IsTrigger
