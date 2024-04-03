@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7935390978183436743}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3127394207878491989}
@@ -99,7 +99,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -116,8 +116,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3127394207878491989}
-  - component: {fileID: 4346273336595708869}
   - component: {fileID: 1874434171299586697}
+  - component: {fileID: 4346273336595708869}
   m_Layer: 0
   m_Name: GamePaddle
   m_TagString: Paddle
@@ -135,26 +135,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -4.25, z: -0.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7426680636108970368}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4346273336595708869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6879188604059439053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96d7e401cfa1e7c4fba99f45608c0699, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammo: {fileID: 6921432569372576301, guid: 95ff508a35a3f3f49a611a307288174d, type: 3}
-  speed: 3
 --- !u!54 &1874434171299586697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -182,3 +168,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4346273336595708869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6879188604059439053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d7e401cfa1e7c4fba99f45608c0699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: {fileID: 6921432569372576301, guid: 95ff508a35a3f3f49a611a307288174d, type: 3}
+  rightBorder: {fileID: 0}
+  leftBorder: {fileID: 0}
+  speed: 10
+  paddleColor:
+  - {fileID: 2100000, guid: 69bb23f21b468ec4386793884b4cdce6, type: 2}
+  - {fileID: 2100000, guid: 8b3c966724295bb47ba440f8547c05b4, type: 2}

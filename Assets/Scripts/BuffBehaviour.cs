@@ -18,7 +18,5 @@ public class BuffBehaviour : MonoBehaviour
         if (other.tag.Equals("DeathZone")){
             Destroy(gameObject);
         }
-        
     }
-    
 }

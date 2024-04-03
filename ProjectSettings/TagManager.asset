@@ -12,6 +12,7 @@ TagManager:
   - Brick
   - TopBorder
   - SideBorder
+  - Ammo
   layers:
   - Default
   - TransparentFX
